@@ -1,0 +1,99 @@
+Project Document: Pitstop Auto
+
+System Parameters
+Customers will use this system to request what service they need. It will provide service options and oil spec options. There will also be add-on products.
+
+CONSTANTS
+
+Services:
+Standard oil change - $39.95
+Syn-blend oil change - $54.95
+Full-syn oil change - $69.95
+
+Oil weight:
+10w30
+5w30
+5w20
+
+Add-ons:
+Air filter - $24.95
+Cabin air filter – $29.95
+Wiper blades - $44.00
+Tire rotation - $20.00
+Wheel alignment - $129.95
+
+Terminal interaction
+
+System menu:
+Services
+Customer info - update/delete
+Customer history - print/delete
+Quit
+
+Services:
+1. have you been here before (y/n)
+if yes look up customer via phone number
+if no input new customer
+2. pull customer info for ticket/service
+3. take customers order/make service ticket
+4. confirm ticket/order
+5. display invoice
+6. archive invoice
+7. end program
+
+New customer info:
+Enter customer name: <customer name>
+Enter customer address: <street address>
+Enter customer phone number: <phone number>
+Enter vehicle year: 2021
+Enter vehicle make: kia
+Enter vehicle model: rio
+Enter vehicle license plate: <license plate>
+
+Update customer info:
+update address
+phone number
+vehicle
+delete
+
+Customer history:
+look up all history
+delete history
+
+Quit:
+end program
+
+Service selection:
+Standard oil change
+Syn-blend oil change
+Full-syn oil change
+
+Oil weight selection:
+10w30
+5w30
+5w20
+
+Add-on selection:
+Air filter
+Cabin air filter
+Wiper blades
+Tire rotation
+Wheel alignment
+
+Confirm service  /  Edit service(redo?)
+
+Multi-stream output
+
+Human readable receipt:
+Customer: <customer name>
+Address: <street address>
+Vehicle: 2021, kia, rio
+License plate: <license plate>
+Service: full-syn oil change
+Add-ons: wiper blades
+Total price:  $113.95
+
+System history
+
+Computer readable dictionary:
+{<customer name>, <street address>, (phone number), 2021, kia, rio, <license plate>, full-syn oil change, wiper blades, 113.95}
