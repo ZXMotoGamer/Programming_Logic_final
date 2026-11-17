@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+data/customers.json
+data/customers.json.tmp
