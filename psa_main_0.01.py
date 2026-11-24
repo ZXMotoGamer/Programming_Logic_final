@@ -14,7 +14,7 @@ ADD_ONS = (
     "Tire rotation",
     "Wheel alignment",
 )
-SYSTEM_MENU = "1. Services\n2. Customer information\n3. Customer history\n4. Quit"
+SYSTEM_MENU = "1. New Work Order\n2. Customer information\n3. Customer history\n4. Quit"
 
 customer_info = {}
 # customer info dictionary or txt file outside of program?? unknown how this works yet.
@@ -37,7 +37,7 @@ def lookup_customer_history():
     pass
 
 
-def make_service_ticket():
+def make_work_order():
     # Todo: produce a ticket/service invoice from customer service requests.
     pass
 
@@ -52,7 +52,7 @@ def display_invoice():
     pass
 
 
-def archive_service_ticket():
+def archive_invoice():
     # Todo: save invoice/service mark up for customer history
     pass
 
