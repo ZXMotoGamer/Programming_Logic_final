@@ -31,18 +31,18 @@ Customer history - print/delete
 Quit
 
 New work order:
-display menu 1. new customer 2. search customer
-
-1. If new customer add (append) customer
-2. If search customer via phone number (is found) continue
-3. Make work order
-4. confirm work order: confirm, redo, quit
+display menu 1. new customer 2. search customer 3. quit
+1. new customer add (append) customer
+2. search customer via phone number (is found) continue
+3. quit - return to main menu
+Make work order
+confirm work order: confirm, edit, quit
 confirm - continue
-redo - new work order
+edit - display menu 1. service = new 2. oil weight = new 3. add-on = new
 quit - back to main menu
-5. display invoice
-6. archive invoice
-7. Return to menu
+display invoice
+archive invoice
+Return to menu
 
 Add new customer info:
 Enter customer name: <customer name>
@@ -52,6 +52,8 @@ Enter vehicle year: 2021
 Enter vehicle make: kia
 Enter vehicle model: rio
 Enter vehicle license plate: <license plate>
+confirm info (y/n)
+edit - display menu 1. cust name 2. cust address 3. cust phone number 4. vehicle year 5. vehicle make 6. vehicle model 7. license plate 
 Generate customer id
 **write to customer info file, make customers phone number their profile id/key**
 
@@ -62,7 +64,8 @@ display customer profile
 2. search customer
 display menu for what to change example: name, address, phone number, vehicle, quit
 update info
-3. confirm deletion
+3. display info
+confirm deletion
 delete customer
 continue
 
@@ -76,11 +79,8 @@ confirm deletion of history (y/n)
 continue
 3. quit return to main menu
 
-
-
 Quit:
 end program
-
 
 Human readable receipt:
 Customer: <customer name>
