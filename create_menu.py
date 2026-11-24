@@ -18,7 +18,7 @@ def get_menu_options():
 
 
 def save_to_file(menu):
-    with open("final_project_folder\\menu.txt", "a") as file:
+    with open("Python_Final_AI\\final_project_folder\\menu.txt", "a") as file:
         all_items = menu.items()
         for item in all_items:
             output = f"{item[0]} : {item[1]}"

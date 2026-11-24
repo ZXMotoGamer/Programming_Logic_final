@@ -1,7 +1,7 @@
 Project Document: Pitstop Auto
 
 System Parameters
-Customers will use this system to request what service they need. It will provide service options and oil spec options. There will also be add-on products.
+Employee will use this system to help the customer with what service they need. It will provide service options and oil spec options. There will also be add-on products.
 
 CONSTANTS
 
@@ -25,23 +25,26 @@ Wheel alignment - $129.95
 Terminal interaction
 
 System menu:
-Services
+New work order
 Customer info - update/delete
 Customer history - print/delete
 Quit
 
-Services:
-1. have you been here before (y/n)
-if yes look up customer via phone number
-if no input new customer
-2. pull customer info for ticket/service
-3. take customers order/make service ticket
-4. confirm ticket/order
+New work order:
+display menu 1. new customer 2. search customer
+
+1. If new customer add (append) customer
+2. If search customer via phone number (is found) continue
+3. Make work order
+4. confirm work order: confirm, redo, quit
+confirm - continue
+redo - new work order
+quit - back to main menu
 5. display invoice
 6. archive invoice
-7. end program
+7. Return to menu
 
-New customer info:
+Add new customer info:
 Enter customer name: <customer name>
 Enter customer address: <street address>
 Enter customer phone number: <phone number>
@@ -49,40 +52,35 @@ Enter vehicle year: 2021
 Enter vehicle make: kia
 Enter vehicle model: rio
 Enter vehicle license plate: <license plate>
+Generate customer id
+**write to customer info file, make customers phone number their profile id/key**
 
-Update customer info:
-update address
-phone number
-vehicle
-delete
+Customer info:
+display menu 1. search customer 2. update customer 3. delete customer 4. quit
+1. search customer
+display customer profile
+2. search customer
+display menu for what to change example: name, address, phone number, vehicle, quit
+update info
+3. confirm deletion
+delete customer
+continue
 
 Customer history:
-look up all history
-delete history
+display menu 1. Search 2. delete customer history 3. Quit
+1. Search customer via phone number
+display history
+2. Search customer via phone number
+display history
+confirm deletion of history (y/n)
+continue
+3. quit return to main menu
+
+
 
 Quit:
 end program
 
-Service selection:
-Standard oil change
-Syn-blend oil change
-Full-syn oil change
-
-Oil weight selection:
-10w30
-5w30
-5w20
-
-Add-on selection:
-Air filter
-Cabin air filter
-Wiper blades
-Tire rotation
-Wheel alignment
-
-Confirm service  /  Edit service(redo?)
-
-Multi-stream output
 
 Human readable receipt:
 Customer: <customer name>
@@ -96,4 +94,4 @@ Total price:  $113.95
 System history
 
 Computer readable dictionary:
-{<customer name>, <street address>, (phone number), 2021, kia, rio, <license plate>, full-syn oil change, wiper blades, 113.95}
+cust-id = {timestamp, <customer name>, <street address>, (phone number), 2021, kia, rio, <license plate>, full-syn oil change, wiper blades, 113.95}
